@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    transition: all .3s linear;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding-left: 35rem;
+}
+h1, h2, h3, h4, h5 {
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 3.4rem;
+    font-weight: 900;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    background: #000;
+}
+header .user {
+    width: 35rem;
+    display: flex;
+    flex-flow: column;
+}
+header .user .user-img img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid orangered;
+}
+header .user .name {
+    font-size: 2.5rem;
+    color: orange;
+}
+header .user .profession {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header .navbar {
+    margin-top: 2rem;
+    width: 100%;
+}
+header .navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar ul li a {
+    display: block;
+    margin: 1rem 2.5rem;
+    padding: 1rem;
+    color: #fff;
+    background: rgb(54, 53, 53);
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+header .navbar ul li a:hover {
+    background-color: orange;
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: rgb(88, 87, 87);
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.home {
+    padding-left: 3rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+}
+
+.home h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home h1 {
+    font-size: 5rem;
+}
+.home span {
+    color: orange;
+}
+
+.home p {
+    font-size: 1.7rem;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home a {
+    margin-top: 3rem;
+}
+
+.home .btn {
+    padding: 1rem 4rem;
+    margin-top: 3rem auto;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: orange;
+    color: #fff;
+    border-radius: .5rem;
+}
+.home .btn:hover {
+    background: orangered;
+}
+
+.about {
+    padding-left: 5rem;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+}
+.about .about-left {
+    width: 50%;
+    margin-top: 5rem;
+    float: left;
+    margin-right: 5%;
+}
+.about .about-left h3 {
+    font-size: 3rem;
+    color: orange;
+}
+.about .about-left h4 {
+    font-size: 2rem;
+}
+.about .about-left p {
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+.about .about-left .about-details {
+    margin-top: 2rem;
+}
+.about .about-left .about-details li {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.about .about-left .about-details li strong {
+    font-size: 1.5rem;
+    color: orange;
+    width: 8rem;
+    display: inline-block;
+}
+.about .about-right {
+    width: 42%;
+    overflow: hidden;
+    height: 40rem;
+    margin-top: 5rem;
+}
+.about .about-right .about-image {
+    display: block;
+    overflow: hidden;
+}
+.about .about-right .about-image img {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.hire-section span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    padding-top: 2rem;
+}
+.hire-section a {
+    display: inline-block;
+}
+
+.hire-section .btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+
+.hire-section button {
+    color: #000;
+    border: .1rem solid orange;
+    border-radius: .3rem;
+    transition: .3s;
+}
+
+.hire-section button:hover {
+    background-color: orange;
+    outline: none;
+}
+
+/* Counter box */
+.counter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    flex-flow: row;
+    margin: 5rem auto;
+}
+.counter .box {
+    width: 20rem;
+    border: .2rem solid rgb(248, 164, 7);
+    padding: 2rem 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+.counter .box span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: orange;
+}
+.counter .box h3 {
+    font-size: 1.5rem;
+}
+
+/* Education Section Design starts */
+
+.education-section {
+    padding-bottom: 10rem;
+}
+.education-section .edu-left {
+    margin-top: 5rem;
+    width: 45%;
+    display: inline-block;
+}
+
+.education-section .edu-left ul {
+    list-style: none;
+    margin-left: 5rem;
+}
+.education-section .edu-left ul li {
+    margin: 3rem;
+    border-left: .2rem solid #ddd;
+    padding-left: 4rem;
+    position: relative;
+}
+
+.education-section .edu-left ul li::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;;
+    background-color: orange;
+    top: 0;
+    left: -2.2rem;
+}
+
+.education-section .edu-left ul li span {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.education-section .edu-left ul li h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.education-section .edu-left ul li p {
+    font-size: 1.6rem;
+    color: gray;
+    font-weight: 500;
+}
+
+.education-section .edu-right {
+    margin-top: 5rem;
+    width: 50%;
+    float: right;
+}
+
+.education-section .edu-right ul {
+    list-style: none;
+    margin-left: 5rem;
+    display: inline-block;
+}
+.education-section .edu-right ul li {
+    margin: 3rem;
+    border-left: .2rem solid #ddd;
+    padding-left: 4rem;
+    position: relative;
+}
+
+.education-section .edu-right ul li::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;;
+    background-color: orange;
+    top: 0;
+    left: -2.2rem;
+}
+
+.education-section .edu-right ul li span {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.education-section .edu-right ul li h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.education-section .edu-right ul li p {
+    font-size: 1.6rem;
+    color: gray;
+    font-weight: 500;
+}
+.service .service-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: 3 row;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10rem 2rem;
+}
+
+.service .service-box {
+    width: 31.33%;
+    border: .1rem solid #ddd;
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-right: 2%;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 5px 10px 15px rgba(56, 34, 34, 0.37);
+}
+
+.service .service-box:hover {
+    box-shadow: 2px 5px 7px rgba(56, 34, 34, 0.37);
+}
+.service .service-box:nth-child(3) {
+    margin-right: 0;
+}
+
+.service .service-box h4 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: orange;
+}
+.service .service-box p {
+    font-size: 1.6rem;
+}
+
+.service .service-box .service-btn {
+    display: block;
+}
+
+.service .service-box .service-btn a {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 2rem 3rem;
+    padding:  1rem;
+    border: .2rem solid rgb(252, 194, 6);
+    color: orange;
+    border-radius: .7rem;
+    transition: .3s;
+}
+
+.service .service-box .service-btn a:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact .contact-container {
+    padding: 5rem;
+}
+
+.contact .contact-container .contact-left {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    margin: 5rem 0;
+    text-align: center;
+    float: left;
+}
+
+.contact .contact-container .contact-left .address {
+    margin-bottom: 3rem;
+}
+
+.contact .contact-container .contact-left .address h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.contact .contact-container .contact-left .address p {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+.contact .contact-container .contact-left .phone {
+    margin-bottom: 3rem;
+}
+
+.contact .contact-container .contact-left .phone h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.contact .contact-container .contact-left .phone a {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.contact .contact-container .contact-left .email {
+    margin-bottom: 3rem;
+}
+
+.contact .contact-container .contact-left .email h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.contact .contact-container .contact-left .email a {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: lowercase;
+}
+
+.contact .contact-container .contact-right {
+    width: 55%;
+    float: right;
+    margin-top: 5rem;
+    margin-left: 5%;
+}
+.contact .contact-container .contact-right h5 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.contact .contact-container .contact-right form {
+    width: 100%;
+    padding-bottom: 10rem;
+}
+
+.contact .contact-container .contact-right form .form-group {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.contact .contact-container .contact-right form .form-group input, textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: .1rem solid orange;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.contact .contact-container .contact-right form .submit-btn input {
+    padding: 1rem 2rem;
+    border: .1rem solid orange;
+    border-radius: .5rem;
+}
+
+.contact .contact-container .contact-right form .submit-btn input:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+   html {
+       font-size: 55%;
+   } 
+}
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 50%;
+    } 
+    body {
+        padding-left: 0;
+    }
+    header {
+        left: -120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+ }
+
+ @media only screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    } 
+    header {
+        left: -120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+    .about {
+        margin-top: 10rem;
+    }
+    .about .about-left {
+        width: 100%;
+        margin-right: 10%;
+        margin-bottom: 3rem;
+
+    }
+    .about .about-right {
+        width: 100%;
+        height: 60rem;
+        padding: 0 2rem;
+    }
+
+    .about .about-right .about-image img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+
+    }
+    .counter {
+        margin: 5rem auto;
+    }
+    .counter .box {
+        width: 45%;
+        
+    }
+ }
+ @media only screen and (max-width: 576px) {
+    html {
+        font-size: 50%;
+    } 
+    header {
+        width: 100vw;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+    .counter {
+        width: 100%;
+    }
+    .counter .box {
+        width: 90%;
+        display: block;
+        
+    }
+ }
